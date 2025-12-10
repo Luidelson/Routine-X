@@ -1,0 +1,113 @@
+.admin-delete-btn {
+  background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 12px rgba(248, 87, 166, 0.13);
+  margin-left: 0.5rem;
+}
+.admin-delete-btn:hover,
+.admin-delete-btn:focus {
+  background: linear-gradient(90deg, #ff5858 0%, #f857a6 100%);
+  transform: translateY(-2px) scale(1.04);
+  outline: none;
+  box-shadow: 0 4px 18px rgba(248, 87, 166, 0.18);
+}
+
+.admin-users-table select.role-badge {
+  padding: 0.35em 1em;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1em;
+  color: #000;
+  border: none;
+  background: linear-gradient(90deg, #38bdf8 0%, #6366f1 100%);
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+}
+.admin-users-table select.role-badge.role-admin {
+  background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+}
+.admin-users-table select.role-badge.role-trainer {
+  background: linear-gradient(90deg, #38bdf8 0%, #6366f1 100%);
+}
+.admin-users-table select.role-badge.role-member {
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+}
+.admin-users-container {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  border-radius: 2rem;
+  box-shadow: 0 6px 32px rgba(56, 189, 248, 0.13);
+  padding: 2.5rem 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.admin-users-container h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+}
+
+.admin-users-search {
+  width: 95%;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  outline: none;
+  transition: border 0.18s;
+}
+.admin-users-search:focus {
+  border: 1.5px solid #38bdf8;
+}
+
+.admin-users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 2px 18px rgba(56, 189, 248, 0.13);
+}
+.admin-users-table th,
+.admin-users-table td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  font-size: 1.08rem;
+}
+.admin-users-table th {
+  background: #e0e7ff;
+  color: #6366f1;
+  font-weight: 700;
+}
+.admin-users-table tr:nth-child(even) {
+  background: #f1f5f9;
+}
+
+.role-badge {
+  padding: 0.35em 1em;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1em;
+  color: #fff;
+  display: inline-block;
+}
+.role-trainer {
+  background: linear-gradient(90deg, #38bdf8 0%, #6366f1 100%);
+}
+.role-member {
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+}
+.role-admin {
+  background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+}

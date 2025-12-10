@@ -1,0 +1,357 @@
+/* .workout-item {
+  background: #f8fafc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(80, 80, 160, 0.07);
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.7rem;
+  cursor: pointer;
+  transition: box-shadow 0.18s, transform 0.18s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+} */
+
+.workout-item:hover {
+  box-shadow: 0 6px 18px rgba(80, 80, 160, 0.13);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.workout-item-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.workout-item-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+.workout-item-setsreps {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+
+.sets-badge,
+.reps-badge {
+  background: #6366f1;
+  color: #fff;
+  border-radius: 0.7rem;
+  padding: 0.18rem 0.8rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-left: 0.2rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 1px 4px rgba(99, 102, 241, 0.08);
+}
+.reps-badge {
+  background: #38bdf8;
+}
+.calendar-title {
+  width: 100%;
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.calendar-container {
+  min-height: calc(100vh - 160px);
+  padding-bottom: 2rem;
+}
+
+.calendar-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+  list-style: none;
+  align-items: center;
+  margin: 0 auto 2rem auto;
+  padding: 0 24px;
+}
+
+.calendar-day {
+  border: none;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(60, 60, 120, 0.1);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 320px;
+  padding: 1.2rem 0.8rem 0.8rem 0.8rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.calendar-day::-webkit-scrollbar {
+  display: none;
+}
+
+.calendar-day:hover {
+  box-shadow: 0 8px 32px rgba(118, 75, 162, 0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.date-pick.selected {
+  background-color: #6366f1;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.calendar-date-picker {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-goal-button {
+  background: linear-gradient(135deg, #4caf50 0%, #667eea 100%);
+  color: #fff;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 140px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.calendar-goal-button:hover {
+  background: linear-gradient(135deg, #667eea 0%, #4caf50 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.calendar-set-rep-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.calendar-sets,
+.calendar-reps {
+  width: 60px;
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.calendar-sets:focus,
+.calendar-reps:focus {
+  box-shadow: 0 0 0 2px #764ba2;
+}
+
+.calendar-sets::placeholder,
+.calendar-reps::placeholder {
+  color: #e0e0e0;
+}
+
+.calendar-choose-day {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.calendar-choose-day:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Modal Styles */
+.calendar-Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(60, 60, 120, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  min-width: 320px;
+  max-width: 90vw;
+  gap: 20px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.18);
+  justify-content: center;
+  position: relative;
+}
+
+.modal-Header {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #764ba2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.goal-Input {
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.goal-Input:focus {
+  border: 1.5px solid #764ba2;
+}
+
+.goal-Save {
+  background: linear-gradient(135deg, #4caf50 0%, #667eea 100%);
+  color: #fff;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.goal-Save:hover {
+  background: linear-gradient(135deg, #667eea 0%, #4caf50 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.goal-Cancel {
+  background: linear-gradient(135deg, #f44336 0%, #764ba2 100%);
+  color: #fff;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.goal-Cancel:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #f44336 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.modal-Close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #764ba2;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal-Close:hover {
+  color: #f44336;
+}
+
+.workout-day {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.workout-list {
+  list-style: none;
+  display: column;
+  padding: 0;
+  justify-content: center;
+}
+
+.workout-item {
+  background: #abadb5;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(118, 75, 162, 0.08);
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.workout-name {
+  font-weight: 600;
+}
+
+.workout-item:hover {
+  box-shadow: 0 4px 16px rgba(118, 75, 162, 0.16);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.workout-set {
+  border-radius: 10px;
+  text-align: center;
+  border: 1.5px solid #333;
+  width: 50px;
+}
+
+.workout-rep {
+  border-radius: 10px;
+  text-align: center;
+  border: 1.5px solid #333;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.workout-save-btn {
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  cursor: pointer;
+}
+
+.workout-delete-btn {
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #ea6671 0%, #764ba2 100%);
+  cursor: pointer;
+}

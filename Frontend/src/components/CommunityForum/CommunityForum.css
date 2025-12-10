@@ -1,0 +1,73 @@
+.community-section-container {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  border-radius: 2rem;
+  box-shadow: 0 6px 32px rgba(56, 189, 248, 0.13);
+  padding: 2.5rem 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.community-section-hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.community-section-hero h1 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #6366f1;
+  margin-bottom: 0.5rem;
+}
+.community-section-hero p {
+  font-size: 1.2rem;
+  color: #334155;
+}
+
+.community-section-card {
+  background: linear-gradient(90deg, #38bdf8 0%, #6366f1 100%);
+  color: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 18px rgba(56, 189, 248, 0.18);
+  padding: 2rem 1.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.community-section-card h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.7rem;
+}
+.forum-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+.forum-list li {
+  background: #fff;
+  color: #6366f1;
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.1);
+}
+.community-section-btn {
+  background: #fff;
+  color: #6366f1;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.1);
+  transition: background 0.18s, color 0.18s;
+}
+.community-section-btn:hover {
+  background: #6366f1;
+  color: #fff;
+}

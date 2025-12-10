@@ -1,0 +1,247 @@
+.nutrition-comment-user {
+  font-weight: 700;
+  color: #38bdf8;
+  margin-right: 0.4em;
+}
+.nutrition-feed-actions {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.delete-btn {
+  background: #f87171;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(248, 113, 113, 0.13);
+  transition: background 0.18s, transform 0.18s;
+  align-self: flex-end;
+}
+
+.nutrition-like-btn {
+  background: linear-gradient(90deg, #38bdf8 0%, #6366f1 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.4rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.13);
+  transition: background 0.18s, transform 0.18s;
+  margin-right: 0.5rem;
+}
+.nutrition-like-btn:hover {
+  background: linear-gradient(90deg, #6366f1 0%, #38bdf8 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.nutrition-feed-comments {
+  margin-top: 0.7rem;
+}
+.nutrition-comments-list {
+  margin-bottom: 0.5rem;
+}
+.nutrition-comment {
+  background: #e0e7ff;
+  color: #334155;
+  border-radius: 999px;
+  padding: 0.4rem 1.1rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.98rem;
+  box-shadow: 0 1px 4px rgba(56, 189, 248, 0.07);
+}
+.nutrition-comment-input-row {
+  display: flex;
+  gap: 0.5rem;
+}
+.nutrition-comment-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1.5px solid #e0e7ff;
+  font-size: 1rem;
+  background: #f8fafc;
+  color: #334155;
+  transition: border 0.18s;
+}
+.nutrition-comment-input:focus {
+  border-color: #38bdf8;
+  outline: none;
+}
+
+.nutrition-comment-btn {
+  background: linear-gradient(90deg, #6366f1 0%, #38bdf8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.13);
+  transition: background 0.18s, transform 0.18s;
+}
+.nutrition-comment-btn:hover {
+  background: linear-gradient(90deg, #38bdf8 0%, #6366f1 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.nutrition-feed-container {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  border-radius: 2rem;
+  box-shadow: 0 6px 32px rgba(56, 189, 248, 0.13);
+  padding: 2.5rem 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.nutrition-feed-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.nutrition-feed-header h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+.nutrition-feed-header p {
+  font-size: 1.1rem;
+  color: #334155;
+}
+.nutrition-add-btn {
+  background: linear-gradient(90deg, #38bdf8 0%, #6366f1 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.1);
+  transition: background 0.18s, color 0.18s;
+  margin-top: 1rem;
+}
+.nutrition-add-btn:hover {
+  background: #6366f1;
+  color: #fff;
+}
+
+.nutrition-feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.nutrition-feed-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 18px rgba(56, 189, 248, 0.13);
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-left: 6px solid #38bdf8;
+}
+.nutrition-feed-user {
+  font-weight: 700;
+  color: #6366f1;
+  font-size: 1.08rem;
+}
+.nutrition-feed-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222a68;
+}
+.nutrition-feed-desc {
+  font-size: 1rem;
+  color: #334155;
+}
+
+/* Modal styles */
+.nutrition-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30, 41, 59, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.nutrition-modal-content {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 32px rgba(56, 189, 248, 0.18);
+  padding: 2rem 2.2rem;
+  min-width: 320px;
+  max-width: 95vw;
+  width: 400px;
+  position: relative;
+  margin: 0;
+}
+.nutrition-modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.35rem;
+  color: #38bdf8;
+}
+.nutrition-modal-input {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.7rem;
+  border: 1.5px solid #e0e7ff;
+  font-size: 1rem;
+  background: #f8fafc;
+  color: #334155;
+  transition: border 0.18s;
+}
+.nutrition-modal-input:focus {
+  border-color: #38bdf8;
+  outline: none;
+}
+.nutrition-modal-save {
+  background: linear-gradient(90deg, #38bdf8 0%, #6366f1 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.1);
+  transition: background 0.18s;
+}
+.nutrition-modal-save:hover {
+  background: linear-gradient(90deg, #6366f1 0%, #38bdf8 100%);
+}
+.nutrition-modal-close {
+  background: #e0e7ff;
+  color: #334155;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.1);
+  transition: background 0.18s;
+}
+.nutrition-modal-close:hover {
+  background: #38bdf8;
+  color: #fff;
+}

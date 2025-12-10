@@ -1,0 +1,392 @@
+.admin-controls-btn {
+  background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0.7rem 0;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 12px rgba(248, 87, 166, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  letter-spacing: 1px;
+  width: 80%;
+}
+.admin-controls-btn:hover,
+.admin-controls-btn:focus {
+  background: linear-gradient(90deg, #ff5858 0%, #f857a6 100%);
+  transform: translateY(-2px) scale(1.04);
+  outline: none;
+  box-shadow: 0 4px 18px rgba(248, 87, 166, 0.18);
+}
+
+.profile-Section {
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1689877020200-403d8542d95d?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGd5bSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D")
+    no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  transition: background 0.3s;
+}
+
+.profile-Section.dark {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+}
+
+.profile-container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.profile-Section.dark .profile-container,
+.profile-Section.dark .profile-stats {
+  background: #232526;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(30, 30, 30, 0.25);
+}
+
+.profile-pic-wrapper {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #764ba2;
+  box-shadow: 0 2px 8px rgba(118, 75, 162, 0.15);
+  cursor: pointer;
+  transition: border 0.2s;
+}
+.profile-pic:hover {
+  border: 3px solid #667eea;
+}
+
+.profile-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #764ba2;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.profile-Section.dark .profile-name {
+  color: #fff;
+}
+
+.profile-role {
+  font-size: 1.1rem;
+  color: #667eea;
+  margin: -0.5rem 0 1.5rem 0;
+}
+
+.trainer-profile {
+  background: linear-gradient(135deg, #38bdf8 0%, #667eea 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(60, 180, 172, 0.08);
+  width: 80%;
+}
+
+.trainer-profile:hover,
+.trainer-profile:focus {
+  transform: translateY(-2px) scale(1.04);
+  outline: none;
+  box-shadow: 0 4px 18px rgba(248, 87, 166, 0.18);
+}
+
+.profile-edit,
+.profile-signout,
+.profile-settings {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(118, 75, 162, 0.08);
+  width: 80%;
+}
+
+.profile-edit:hover,
+.profile-signout:hover,
+.profile-settings:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.profile-signout {
+  background: linear-gradient(135deg, #f44336 0%, #764ba2 100%);
+}
+
+.clients-btn {
+  background: linear-gradient(135deg, #38b2ac 0%, #667eea 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(60, 180, 172, 0.08);
+  width: 80%;
+}
+
+.clients-btn:hover,
+.clients-btn:focus {
+  transform: translateY(-2px) scale(1.04);
+  outline: none;
+  box-shadow: 0 4px 18px rgba(248, 87, 166, 0.18);
+}
+
+.profile-signout:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #f44336 100%);
+}
+
+.profile-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(60, 60, 120, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.18);
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  position: relative;
+}
+
+.profile-Section.dark .modal-content {
+  background: #232526;
+  color: #fff;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  color: #764ba2;
+  margin-bottom: 1rem;
+}
+.profile-Section.dark .modal-title {
+  color: #fff;
+}
+
+.modal-input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  outline: none;
+  transition: border 0.2s;
+  margin-left: 12px;
+}
+.modal-input:focus {
+  border: 1.5px solid #764ba2;
+}
+
+.modal-save,
+.modal-close {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.modal-save:hover,
+.modal-close:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  color: #764ba2;
+  font-size: 1.5rem;
+  padding: 0;
+}
+.modal-close:hover {
+  color: #f44336;
+  background: transparent;
+}
+
+/* Settings toggles */
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #764ba2;
+}
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.profile-stats-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-stats {
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 4px 16px rgba(60, 60, 120, 0.1);
+  padding: 1.5rem 2rem;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-title {
+  color: #667eea;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.profile-Section.dark .stats-title {
+  color: #fff;
+}
+
+.profile-stats-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(118, 75, 162, 0.08);
+  width: 80%;
+}
+
+.profile-stats-btn:hover,
+.profile-stats-btn:focus {
+  transform: translateY(-2px) scale(1.04);
+  outline: none;
+  box-shadow: 0 4px 18px rgba(248, 87, 166, 0.18);
+}
+
+.stats-edit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+.stats-edit-row label {
+  font-size: 1rem;
+  color: #764ba2;
+  font-weight: 500;
+}
+.profile-Section.dark .stats-edit-row label {
+  color: #fff;
+}
+.stats-input {
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+  margin-left: 0.7rem;
+  width: 60%;
+  outline: none;
+  transition: border 0.2s;
+}
+.stats-input:focus {
+  border: 1.5px solid #764ba2;
+}
