@@ -59,3 +59,10 @@ Routine-X is built to grow. Here are some future directions:
 Routine-X is more than a calendar—it's a complete gym management and community platform. It’s intuitive, scalable, and designed for real fitness professionals and enthusiasts. Building it has deepened my skills in full-stack development, API design, and user experience.
 
 And the journey is just beginning!
+
+<img width="1887" height="866" alt="image" src="https://github.com/user-attachments/assets/5ddc006c-c355-4c10-980a-0a29cd1ce4e5" />
+<img width="1891" height="862" alt="image" src="https://github.com/user-attachments/assets/8e34939a-843a-47e1-8224-9666df6dfc21" />
+<img width="1907" height="870" alt="image" src="https://github.com/user-attachments/assets/d68471e2-ba9b-47ef-901c-21f864f8161e" />
+
+
+
